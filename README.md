@@ -4,20 +4,12 @@
 
 This repository contains an introduction to the programming environment used in this course, which includes:
 
-- [Using Linux](#using-linux)
-- [Using the terminal](#using-the-terminal)
-- [Installing GCC and Make](#installing-gcc-and-make)
-- [Compile and run "Hello world!" in C++](#compile-and-run-hello-world-in-c)
-- [Using CMake](#using-cmake)
-- [Using CLion for the first time](#using-clion-for-the-first-time)
-- [Practical classes step-by-step](#practical-classes-step-by-step)
+ - [Using Linux](#using-linux)
+ - [Using the terminal](#using-the-terminal)
+ - [Installing GCC and Make](#installing-gcc-and-make)
+ - [Setting up a development environment for your PC](#setting-up-a-development-environment-for-your-pc)
+ - [Compile and run "Hello world!" in C++](#compile-and-run-hello-world-in-c)
 
-This introduction assumes you are using the computers available at FEUP. At the end of the document you also have a [section about setting up the environment in your PC](#environment-setup), for several operating systems, and also how to install CLion:
-
-- [Linux Setup](#linux)
-- [Windows Setup](#windows)
-- [MacOS Setup](#macos)
-- [CLion Setup](#clion-setup)
 
 ## Using Linux
 
