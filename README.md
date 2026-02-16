@@ -338,14 +338,24 @@ Note: Compiling C++ code can be complex and on some setups, compiling by hand wi
 
 ### Compile the program using a `Makefile` (Recommended)
 
-Use this [Makefile](Makefile) and copy it to your `prog` folder.
+Makefiles are files that contain instructions for the `make` build tool. They are used to automate the compilation of programs, and they can be configured to work in a variety of environments. In this section, we will use a `Makefile` that we will provide, which is configured to work in FEUP's labs and in a variety of setups.
+
+First, download the [Makefile](Makefile) and copy it to your `prog` folder.
 
 To compile the program `hello` with source code `hello.cpp` using the `Makefile` it then suffices to execute `make hello`:
 
-  ```
+```
 $ make hello
 g++ -std=c++17 -pedantic -Wall -Wuninitialized -Werror -g  -lm -fsanitize=address -fsanitize=undefined     hello.cpp   -o hello
   ```
+
+__Note:__ If you get the following message:
+
+```
+make: `hello' is up to date.
+```
+
+This means that the `Makefile` thinks that the executable file `hello` is already up to date with respect to the source code `hello.cpp`, so it does not need to be recompiled. This happens because in the previous step you compiled it using GCC. To force recompilation, you can execute `make hello -B` (or `make hello --always-make`), which will ignore the timestamps and recompile anyway.
 
 To compile a program (`PROG`) with several sources (`CPP_FILES`) and headers (`HEADERS`) execute `make PROG=... CPP_FILES="..." HEADERS="..."`. For instance, to compile the files `hello_main.cpp`, `say_hello.cpp`, and `include/say_hello.h`:
 
