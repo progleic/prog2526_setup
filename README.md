@@ -119,7 +119,7 @@ If you want to learn more about the command line, there is a tutorial available 
 
 ## Installing GCC and Make
 
-This section is relevant if you want to set up a development environment on your own PC. If you are using FEUP's lab PCs, GCC and Make are already installed. If you are in the lab, you can jump to the section [Compile and run "Hello world!" in C++](#compile-and-run-hello-world-in-c++) below.
+This section is relevant if you want to set up a development environment on your own PC. If you are using FEUP's lab PCs, GCC and Make are already installed. __If you are in the lab, you can jump to the section [Compile and run "Hello world!" in C++](#compile-and-run-hello-world-in-c) below__.
 
 You will need:
 
